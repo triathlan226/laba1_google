@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+//document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const prizeForm = document.getElementById('prize-form');
     const prizeInput = document.getElementById('prize-input');
