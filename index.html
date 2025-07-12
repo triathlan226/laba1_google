@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽博龐克拉霸機</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <main class="app-container">
+        <div class="controls-container">
+            <header>
+                <h1>CYBER SLOT</h1>
+                <p>賽博龐克拉霸機</p>
+            </header>
+            <section class="prize-manager" aria-labelledby="prize-manager-title">
+                <h2 id="prize-manager-title" class="section-title">獎品設定</h2>
+                <form id="prize-form">
+                    <div class="input-group">
+                        <input type="text" id="prize-input" placeholder="新增獎品名稱 (最多5個)" maxlength="10" aria-label="新增獎品名稱">
+                        <button type="submit" class="btn" aria-label="新增獎品">新增</button>
+                    </div>
+                </form>
+                <div id="prize-list-container">
+                    <p>目前獎品:</p>
+                    <div id="prize-list"></div>
+                </div>
+                <button id="update-prizes" class="btn btn-update" aria-label="更新獎品至拉霸機">更新獎品</button>
+            </section>
+        </div>
+
+        <div class="machine-container">
+            <div id="slot-machine">
+                <!-- 9 slot cells will be generated here by JS -->
+            </div>
+            <button id="spin-button" class="btn btn-spin" aria-label="開始旋轉">
+                <span class="btn-text">SPIN</span>
+            </button>
+            <div id="result-message" role="alert" aria-live="assertive"></div>
+        </div>
+    </main>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
